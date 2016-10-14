@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<title>智慧园区</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+	</head>
+	<body>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">园区</span>
+			</a>
+			<a class="mui-tab-item" href="#">
+				<span class="mui-icon mui-icon-chat"></span>
+				<span class="mui-tab-label">联系</span>
+			</a>
+			<a class="mui-tab-item" href="#">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+		
+		<div class="mui-content">
+			<div class="mui-slider" id="navSlider">
+				<div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1">首页</a>
+					<a class="mui-control-item" href="#item2">服务</a>
+					<a class="mui-control-item" href="#item3">活动</a>
+					<a class="mui-control-item" href="#item4">话题</a>
+				</div>
+				<div class="mui-slider-progress-bar mui-col-xs-3 mui-col-sm-3"></div>
+				<div class="mui-slider-group">
+					<!-- 首页 -->
+					<div class="mui-slider-item mui-control-content mui-active" id="item1">
+						<!-- 图片轮播 -->
+						<div class="mui-slider" style="margin-bottom:10px;">
+							<div class="mui-slider-group mui-slider-loop">
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#">
+										<img src="img/slider03.jpg" />
+									</a>
+								</div>
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="img/slider01.jpg" />
+									</a>
+								</div>
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="img/slider02.jpg" />
+									</a>
+								</div>
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="img/slider03.jpg" />
+									</a>
+								</div>
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#">
+										<img src="img/slider01.jpg" />
+									</a>
+								</div>
+							</div>
+							<div class="mui-slider-indicator">
+								<div class="mui-indicator mui-active"></div>
+								<div class="mui-indicator"></div>
+								<div class="mui-indicator"></div>
+							</div>
+						</div>
+						
+						<!-- 九宫格 -->
+						<ul class="mui-table-view mui-grid-view mui-grid-9" id="linkGrid">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+								<a href="#">
+									<img src="img/icon01.png" class="link-icon" />
+									<div class="mui-media-body">招商中心</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+								<a href="#">
+									<img src="img/icon02.png" class="link-icon" />
+									<div class="mui-media-body">电子沙盘</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+								<a href="#">
+									<img src="img/icon03.png" class="link-icon" />
+									<div class="mui-media-body">企业介绍</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+								<a href="#">
+									<img src="img/icon04.png" class="link-icon" />
+									<div class="mui-media-body">一键维修</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+								<a href="#">
+									<img src="img/icon05.png" class="link-icon" />
+									<div class="mui-media-body">企业孵化</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+								<a href="#">
+									<img src="img/icon06.png" class="link-icon" />
+									<div class="mui-media-body">人力资源</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+								<a href="#">
+									<img src="img/icon07.png" class="link-icon" />
+									<div class="mui-media-body">引资服务</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+								<a href="#">
+									<img src="img/icon08.png" class="link-icon" />
+									<div class="mui-media-body">技术对接</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+								<a href="#">
+									<img src="img/icon-plus.png" class="link-icon" id="iconPlus" />
+								</a>
+							</li>
+						</ul>
+						
+						<!-- 热点关注 -->
+						<div class="mui-row marquee-row">
+							<div class="mui-col-sm-4 mui-col-xs-4">
+								<img src="img/hot.png" class="hot-pic" />
+							</div>
+							<div class="mui-col-sm-8 mui-col-xs-8">
+								<div class="smartmarquee">
+								  	<ul class="container">
+									    <li><a href="#">【政策速递】智慧园区启动仪式</a></li>
+									    <li><a href="#">【引资服务】智慧园区启动仪式</a></li>
+									    <li><a href="#">【人力资源】智慧园区启动仪式</a></li>
+									    <li><a href="#">【企业介绍】智慧园区启动仪式</a></li>
+									    <li><a href="#">【法律顾问】智慧园区启动仪式</a></li>
+								  	</ul>
+								</div> 
+							</div>
+						</div>
+						
+						<!-- 栅格 -->
+						<div class="mui-row" style="margin-top:10px;">
+							<div class="mui-col-sm-6 mui-col-xs-6">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell mui-media">
+										<a href="#">
+											<img class="mui-media-object mui-pull-left" src="img/circle01.png" />
+											<div class="mui-media-body">
+												直播
+												<p class="mui-ellipsis">实时视频互动</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="#">
+											<img class="mui-media-object mui-pull-left" src="img/circle03.png" />
+											<div class="mui-media-body">
+												法律顾问
+												<p class="mui-ellipsis">法律咨询服务</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="#">
+											<img class="mui-media-object mui-pull-left" src="img/circle05.png" />
+											<div class="mui-media-body">
+												免费wifi
+												<p class="mui-ellipsis">一键免费上网</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="#">
+											<img class="mui-media-object mui-pull-left" src="img/circle07.png" />
+											<div class="mui-media-body">
+												饮用水采购
+												<p class="mui-ellipsis">清洁干净水源</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="mui-col-sm-6 mui-col-xs-6">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell mui-media">
+										<a href="#">
+											<img class="mui-media-object mui-pull-left" src="img/circle02.png" />
+											<div class="mui-media-body">
+												环境服务
+												<p class="mui-ellipsis">园区环境维护</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="#">
+											<img class="mui-media-object mui-pull-left" src="img/circle04.png" />
+											<div class="mui-media-body">
+												投诉建议
+												<p class="mui-ellipsis">有问题请联系我们</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="#">
+											<img class="mui-media-object mui-pull-left" src="img/circle06.png" />
+											<div class="mui-media-body">
+												停车缴费
+												<p class="mui-ellipsis">临时停车缴费</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="#">
+											<img class="mui-media-object mui-pull-left" src="img/circle08.png" />
+											<div class="mui-media-body">
+												党群社区
+												<p class="mui-ellipsis">党务政务公开</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 服务 -->
+					<div class="mui-slider-item mui-control-content" id="item2">服务</div>
+					<!-- 活动 -->
+					<div class="mui-slider-item mui-control-content" id="item3">活动</div>
+					<!-- 话题 -->
+					<div class="mui-slider-item mui-control-content" id="item4">话题</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			//初始化MUI
+			mui.init();
+			//初始化图片轮播
+			mui("#picSlider").slider({interval:5000});
+		</script>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.smartmarquee.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				 $(".smartmarquee").smartmarquee({
+				 	duration: 1200,
+				 	loop: true,
+				 	interval: 3000,
+				 	axis: "vertical" //horizontal
+				 });
+			});
+		</script>
+	</body>
+</html>

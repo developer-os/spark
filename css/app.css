@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+body {font-family: "microsoft yahei",'Helvetica Neue',Helvetica,sans-serif;}
+
+#navSlider .mui-segmented-control.mui-segmented-control-inverted {background:#fff;}
+#navSlider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {border:none;}
+
+#linkGrid {background:#fff;}
+#linkGrid .mui-table-view-cell {padding:0 15px;}
+#linkGrid .link-icon {margin:0 auto;display:block;width:56px;height:56px;}
+#linkGrid #iconPlus {margin-top:11px;margin-bottom:12px;}
+
+.marquee-row {padding:12px 0;background:#fff;border-bottom:1px solid #eee;}
+.smartmarquee {position:relative;height:20px;padding-left:10px;border-left:1px solid #eee;overflow:hidden;}
+.smartmarquee .container {position:absolute;list-style:none;margin:0;padding:0;} 
+.smartmarquee .container li {height:20px;line-height:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.marquee-row .hot-pic {display:block;margin:0 auto;height:20px;width:auto!important;}
