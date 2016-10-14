@@ -15,3 +15,9 @@ body {font-family: "microsoft yahei",'Helvetica Neue',Helvetica,sans-serif;}
 .smartmarquee .container {position:absolute;list-style:none;margin:0;padding:0;} 
 .smartmarquee .container li {height:20px;line-height:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .marquee-row .hot-pic {display:block;margin:0 auto;height:20px;width:auto!important;}
+
+input[type=search] {background:#fff;}
+
+#selectList .mui-media .mui-media-body {margin-top:10px;}
+#selectList .mui-table-view-cell.mui-checkbox input[type=checkbox], 
+.mui-table-view-cell.mui-radio input[type=radio] {top:18px;}
