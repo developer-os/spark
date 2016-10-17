@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<title>园区概况 - 谷咚</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">园区概况</h1>
+		</header>
+		
+		<div class="mui-content">
+			<div class="chart-div" id="chartDiv01"></div>
+			<div class="chart-div" id="chartDiv02" style="height:300px;"></div>
+			<div class="chart-div" id="chartDiv03" style="height:250px;"></div>
+		</div>
+		
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			//初始化MUI
+			mui.init();
+		</script>
+		<script type="text/javascript" src="js/echarts.min.js"></script>
+		<script type="text/javascript">
+			//初始化报表 - 土地分析
+			var chart01 = echarts.init(document.getElementById("chartDiv01"));
+			var opt01 = {
+				title: {
+	                text: "土地分析",
+	                subtext: "公顷",
+	                textStyle: {fontSize:14}
+	            },
+	            grid: {
+	            	top: 60,
+	            	left: 30,
+	            	right: 0,
+	            	bottom: 20
+	            },
+	            xAxis: [{
+	            	type: "category",
+	                data: ["居住用地", "公共设施", "研发工业混合", "绿地"],
+	                axisLabel: {interval:0}
+	            }],
+	            yAxis: [{
+	            	type: "value"
+	            }],
+	            series: [{
+	                name: "用地面积",
+	                type: 'bar',
+	                label: {
+	                	normal: {show: true}
+	                },
+	                itemStyle: {
+	                	normal: {color: ["#6699CC"]}
+	                },
+	                data: [432, 320, 72, 255]
+	            }],
+	            backgroundColor: "#fff"
+			};
+			chart01.setOption(opt01);
+			
+			//初始化报表 - 投资分布
+			var chart02 = echarts.init(document.getElementById("chartDiv02"));
+			var opt02 = {
+				title: {
+	                text: "投资分布",
+	                subtext: "万元",
+	                textStyle: {fontSize:14}
+	            },
+	            grid: {
+	            	top: 60,
+	            	left: 50,
+	            	right: 0,
+	            	bottom: 50
+	            },
+	            xAxis: [{
+	            	type: "category",
+	                data: ["政府投资", "企业投资", "固定资产投资", "基础设施投资", "入园企业投资", "外商直接投资"],
+	                axisLabel: {interval:0,rotate:30}
+	            }],
+	            yAxis: [{
+	            	type: "value"
+	            }],
+	            series: [{
+	                name: "总额",
+	                type: 'line',
+	                label: {
+	                	normal: {show: true}
+	                },
+	                data: [14000, 8000, 6000, 9500, 5000, 3000]
+	            }],
+	            backgroundColor: "#fff"
+			};
+			chart02.setOption(opt02);
+			
+			//初始化报表 - 公共设施
+			var chart03 = echarts.init(document.getElementById("chartDiv03"));
+			//配置项
+			var opt03 = {
+				title: {
+	                text: '车位数量 & 面积'
+	            },
+	            grid: {
+	            	top: 60,
+	            	left: 50,
+	            	right: 30,
+	            	bottom: 30
+	            },
+	            legend: {
+	            	top: 3,
+	            	left: "right",
+	                data:["车位数量", "车位面积"]
+	            },
+	            xAxis: [{
+	            	type: "category",
+	                data: ["北副中心车位", "主中心车位", "南副中心车位"]
+	            }],
+	            yAxis: [{
+	            	type: "value",
+	            	name: "数量",
+	            	splitLine: {show: false}
+	            }, {
+	            	type: "value",
+	            	name: "面积",
+	            	splitLine: {show: false}
+	            }],
+	            series: [{
+	                name: "车位数量",
+	                type: 'line',
+	                data: [10000, 18000, 6000]
+	            }, {
+	            	name: "车位面积",
+	                type: 'bar',
+	                yAxisIndex: 1,
+	                data: [30, 55, 20]
+	            }],
+	            color: ["#c23531","#6699CC"],
+	            backgroundColor: "#fff"
+			};
+			chart03.setOption(opt03);
+		</script>
+	</body>
+</html>

@@ -2,6 +2,10 @@
 
 body {font-family: "microsoft yahei",'Helvetica Neue',Helvetica,sans-serif;}
 
+/* 首页  */
+#navSlider {padding-top:40px;}
+#navSlider .mui-slider-indicator.mui-segmented-control {position:fixed;top:0;left:0;z-index:10;width:100%;}
+#navSlider .mui-slider-progress-bar {position:fixed;top:38px;left:0;z-index:10;}
 #navSlider .mui-segmented-control.mui-segmented-control-inverted {background:#fff;}
 #navSlider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {border:none;}
 
@@ -21,3 +25,27 @@ input[type=search] {background:#fff;}
 #selectList .mui-media .mui-media-body {margin-top:10px;}
 #selectList .mui-table-view-cell.mui-checkbox input[type=checkbox], 
 .mui-table-view-cell.mui-radio input[type=radio] {top:18px;}
+
+/* 数据展示  */
+.card-div {
+	position:relative;
+	margin:5px;
+	height:90px;
+	background:#fff;
+	border-radius:2px;
+	box-shadow:1px 1px 2px rgba(0,0,0,0.3);
+	overflow:hidden;
+}
+.card-div h3 {
+	position:absolute;
+	top:0;
+	left:5px;
+	line-height:18px;
+	font-size:12px;
+	font-weight:normal;
+	color:#666;
+}
+.card-div p {line-height:110px;text-align:center;}
+.card-div p span {margin-right:5px;font-size:22px;color:#000;}
+
+.chart-div {margin-bottom:10px;height:200px;padding:10px;background:#fff;box-shadow:0 1px 6px #ccc;}
