@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>人力资源 - 谷咚</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav">
+    <h1 class="mui-title">增加人力资源</h1>
+</header>
+
+<div class="mui-content">
+    <div class="mui-row">
+        <form class="mui-input-group">
+            <div class="mui-input-row">
+                <label>服务类型</label>
+                <select class="mui-input-clear">
+                    <option>请选择服务类型</option>
+                    <option>招聘管理</option>
+                    <option>培训管理</option>
+                    <option>薪酬管理</option>
+                    <option>人事代理</option>
+                    <option>人力承包</option>
+                    <option>战略管理</option>
+                </select>
+            </div>
+            <div class="mui-input-row">
+                <label>企业名称</label>
+                <input type="text" class="mui-input-clear" placeholder="请输入企业名称">
+            </div>
+            <div class="mui-input-row">
+                <label>联系人</label>
+                <input type="text" class="mui-input-clear" placeholder="请输入联系人姓名">
+            </div>
+            <div class="mui-input-row">
+                <label>手机号</label>
+                <input type="text" class="mui-input-clear" placeholder="请输入手机号">
+            </div>
+            <div class="mui-input-row">
+                <label>描述</label>
+            </div>
+            <textarea rows="10" cols="20" placeholder="请输入描述信息"></textarea>
+            <div class="mui-button-row">
+                <a href="manpower.html" class="mui-btn mui-btn-primary" >确认</a>
+                <a href="manpower.html" class="mui-btn mui-btn-danger" >取消</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/mui.min.js"></script>
+<script type="text/javascript">
+    //初始化MUI
+    mui.init();
+</script>
+
+</body>
+</html>
