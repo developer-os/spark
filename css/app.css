@@ -1,6 +1,18 @@
 @charset "utf-8";
 
-body {font-family: "microsoft yahei",'Helvetica Neue',Helvetica,sans-serif;}
+/* global  */
+.html-fixed, .html-fixed body {height:100%;}
+body {font-family:"microsoft yahei",'Helvetica Neue',Helvetica,sans-serif;}
+a, input, button {outline:none;}
+input[type=search] {background:#fff;}
+.mui-content-relative {position:relative;}
+.img-block {display:block;width:100%;}
+.mui-card-header .mui-media-body h3 {font-size:18px;font-weight:500;}
+.mui-card-content-inner h3 {margin:10px 0;font-size:16px;font-weight:500;}
+.mui-btn-block {padding:6px 12px;}
+.mui-input-row label,
+.mui-input-row select,
+input, select, textarea {font-size:14px;font-family:"microsoft yahei",'Helvetica Neue',Helvetica,sans-serif;}
 
 /* 首页  */
 #navSlider {padding-top:40px;}
@@ -20,11 +32,39 @@ body {font-family: "microsoft yahei",'Helvetica Neue',Helvetica,sans-serif;}
 .smartmarquee .container li {height:20px;line-height:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .marquee-row .hot-pic {display:block;margin:0 auto;height:20px;width:auto!important;}
 
-input[type=search] {background:#fff;}
-
 #selectList .mui-media .mui-media-body {margin-top:10px;}
 #selectList .mui-table-view-cell.mui-checkbox input[type=checkbox], 
 .mui-table-view-cell.mui-radio input[type=radio] {top:18px;}
+
+/* 招商中心  */
+.nav-bar {padding:14px 0;}
+.nav-bar .mui-row>div {padding:1px 0;text-align:center;}
+.nav-bar .mui-row div:nth-child(2) {border-left:1px solid #ccc;border-right:1px solid #ccc;}
+.nav-bar a {color:#333;text-decoration:none;}
+.nav-bar a.active,
+.nav-bar a:active {color:#007aff;}
+.nav-control {border:none;border-radius:0;}
+.banner-div img {display:block;width:100%;height:145px;}
+.card-list {position:fixed;top:228px;bottom:0;width:100%;overflow:auto;}
+.card-list .mui-card {margin:10px 0 0 0;border-radius:0;box-shadow:none;}
+.card-list .mui-card-content-inner {padding-bottom:0;}
+
+.fixed-link {
+	display:block;
+	position:fixed;
+	top:240px;
+	right:15px;
+	z-index:99;
+	width:50px;
+	height:50px;
+	text-align:center;
+	text-decoration:none;
+	color:#fff;
+	background:#007aff;
+	border-radius:50%;
+	box-shadow:0 1px 3px #000;
+}
+.fixed-link .mui-icon-extra {margin-top:9px;font-size:32px;color:#fff;}
 
 /* 数据展示  */
 .card-div {
