@@ -39,11 +39,16 @@
 					<!-- 首页 -->
 					<div class="mui-slider-item mui-control-content mui-active" id="item1">
 						<!-- 图片轮播 -->
-						<div class="mui-slider" style="margin-bottom:10px;">
+						<div class="mui-slider" id="picSlider" style="margin-bottom:10px;">
 							<div class="mui-slider-group mui-slider-loop">
 								<div class="mui-slider-item mui-slider-item-duplicate">
 									<a href="#">
 										<img src="img/slider03.jpg" />
+									</a>
+								</div>
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="img/slider00.jpg" />
 									</a>
 								</div>
 								<div class="mui-slider-item">
@@ -63,12 +68,13 @@
 								</div>
 								<div class="mui-slider-item mui-slider-item-duplicate">
 									<a href="#">
-										<img src="img/slider01.jpg" />
+										<img src="img/slider00.jpg" />
 									</a>
 								</div>
 							</div>
 							<div class="mui-slider-indicator">
 								<div class="mui-indicator mui-active"></div>
+								<div class="mui-indicator"></div>
 								<div class="mui-indicator"></div>
 								<div class="mui-indicator"></div>
 							</div>
@@ -107,7 +113,7 @@
 								</a>
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<a href="#">
+								<a href="hr.html">
 									<img src="img/icon06.png" class="link-icon" />
 									<div class="mui-media-body">人力资源</div>
 								</a>
@@ -119,13 +125,13 @@
 								</a>
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<a href="#">
-									<img src="img/icon08.png" class="link-icon" />
-									<div class="mui-media-body">技术对接</div>
+								<a href="http://139.196.37.26:8081/zhihuiyuanqu/ngg/index.html#/qiyefuwu">
+									<img src="img/icon09.png" class="link-icon" />
+									<div class="mui-media-body">东方慧谷</div>
 								</a>
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<a href="select.html">
+								<a href="index-select.html">
 									<img src="img/icon-plus.png" class="link-icon" id="iconPlus" />
 								</a>
 							</li>
@@ -189,6 +195,15 @@
 											</div>
 										</a>
 									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="#">
+											<img class="mui-media-object mui-pull-left" src="img/circle03.png" />
+											<div class="mui-media-body">
+												法律顾问
+												<p class="mui-ellipsis">法律咨询服务</p>
+											</div>
+										</a>
+									</li>
 								</ul>
 							</div>
 							<div class="mui-col-sm-6 mui-col-xs-6">
@@ -207,7 +222,7 @@
 											<img class="mui-media-object mui-pull-left" src="img/circle04.png" />
 											<div class="mui-media-body">
 												投诉建议
-												<p class="mui-ellipsis">有问题请联系我们</p>
+												<p class="mui-ellipsis">有问题请联系</p>
 											</div>
 										</a>
 									</li>
@@ -229,16 +244,389 @@
 											</div>
 										</a>
 									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="#">
+											<img class="mui-media-object mui-pull-left" src="img/circle04.png" />
+											<div class="mui-media-body">
+												投诉建议
+												<p class="mui-ellipsis">有问题请联系</p>
+											</div>
+										</a>
+									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 					<!-- 服务 -->
-					<div class="mui-slider-item mui-control-content" id="item2">服务</div>
+					<div class="mui-slider-item mui-control-content" id="item2">
+						<div class="mui-input-row mui-search" style="margin:10px 10px 0 10px;">
+							<input type="search" class="mui-input-clear" placeholder="搜索" />
+						</div>
+						<div class="panel-list">
+							<div class="panel-div">
+								<div class="panel-header panel-header-blue float-clear">
+									<span class="float-left">人才关爱</span>
+									<a href="#" class="float-right">更多&gt;&gt;</a>
+								</div>
+								<div class="panel-content">
+									<div class="mui-row">
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico01.png" />
+												<p>免费wifi</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico02.png" />
+												<p>爱车服务</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico04.png" />
+												<p>实时公交</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico03.png" />
+												<p>通勤巴士</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico05.png" />
+												<p>智慧寻车</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico06.png" />
+												<p>商家优惠</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico07.png" />
+												<p>叫外卖</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico08.png" />
+												<p>差旅出行</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico09.png" />
+												<p>粤港专车</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico10.png" />
+												<p>空余车位</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico11.png" />
+												<p>纵横影院</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico12.png" />
+												<p>我的消费</p>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel-div">
+								<div class="panel-header panel-header-red float-clear">
+									<span class="float-left">企业非核心业务外包</span>
+									<a href="#" class="float-right">更多&gt;&gt;</a>
+								</div>
+								<div class="panel-content">
+									<div class="mui-row">
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico13.png" />
+												<p>文具采购</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico14.png" />
+												<p>装修服务</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico15.png" />
+												<p>礼品采购</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico16.png" />
+												<p>办公设备</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico17.png" />
+												<p>消防服务</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico18.png" />
+												<p>IT护航</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico19.png" />
+												<p>会议服务</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico01.png" />
+												<p>电话宽带</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico20.png" />
+												<p>活动服务</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico21.png" />
+												<p>空调直销</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico22.png" />
+												<p>饮用水采购</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico06.png" />
+												<p>更多优惠</p>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel-div">
+								<div class="panel-header panel-header-green float-clear">
+									<span class="float-left">企业创新资源协同</span>
+									<a href="#" class="float-right">更多&gt;&gt;</a>
+								</div>
+								<div class="panel-content">
+									<div class="mui-row">
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico12.png" />
+												<p>人力资源</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico23.png" />
+												<p>财税金融</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico14.png" />
+												<p>法律顾问</p>
+											</a>
+										</div>
+										<div class="mui-col-sm-3 mui-col-xs-3">
+											<a href="#">
+												<img src="img/ico24.png" />
+												<p>产业资讯</p>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					<!-- 活动 -->
-					<div class="mui-slider-item mui-control-content" id="item3">活动</div>
+					<div class="mui-slider-item mui-control-content" id="item3">
+						<div class="mui-input-row mui-search" style="margin:10px 10px 0 10px;">
+							<input type="search" class="mui-input-clear" placeholder="搜索" />
+						</div>
+						<div class="active-cards">
+							<div class="mui-card">
+								<div class="mui-card-header mui-card-media">
+									<div class="mui-media-body">
+										谷咚大讲堂开讲啦！
+										<p class="tags"><span class="mui-icon mui-icon-flag"></span> 培训课程  企业活动</p>
+										<p class="text-high"><span class="mui-icon-extra mui-icon-extra-calendar"></span> 2016-10-19 09:00 - 2016-10-31 17:00</p>
+									</div>
+								</div>
+								<div class="mui-card-content">
+									<img src="img/pic04.jpg" class="img-block" />
+								</div>
+								<div class="mui-card-footer">
+									<span><span class="mui-icon mui-icon-person"></span> 已有108人报名</span>
+									<a href="#">我要参加</a>
+								</div>
+							</div>
+							<div class="mui-card">
+								<div class="mui-card-header mui-card-media">
+									<div class="mui-media-body">
+										谷咚大讲堂开讲啦！
+										<p class="tags"><span class="mui-icon mui-icon-flag"></span> 培训课程 企业活动</p>
+										<p class="text-high"><span class="mui-icon-extra mui-icon-extra-calendar"></span> 2016-10-19 09:00 - 2016-10-31 17:00</p>
+									</div>
+								</div>
+								<div class="mui-card-content">
+									<img src="img/pic05.jpg" class="img-block" />
+								</div>
+								<div class="mui-card-footer">
+									<span><span class="mui-icon mui-icon-person"></span> 已有108人报名</span>
+									<a href="#">我要参加</a>
+								</div>
+							</div>
+						</div>
+					</div>
 					<!-- 话题 -->
-					<div class="mui-slider-item mui-control-content" id="item4">话题</div>
+					<div class="mui-slider-item mui-control-content" id="item4">
+						<div class="mui-row">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" src="img/topic1.png">
+										<div class="mui-media-body">
+											政策解读
+											<p class='mui-ellipsis'>经济社会转型发展,市委市政府出台了《关于实施“百千万英才计划”的意见》</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" src="img/topic2.png">
+										<div class="mui-media-body">
+											创新
+											<p class='mui-ellipsis'>当下,经济飞速发展的中国已进入创新驱动发展的新常态。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" src="img/topic3.png">
+										<div class="mui-media-body">
+											云计算
+											<p class='mui-ellipsis'>云计算是一种按使用量付费的模式，这种模式提供可用的、便捷的、按需的网络访问</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" src="img/topic4.png">
+										<div class="mui-media-body">
+											物联网
+											<p class='mui-ellipsis'>物联网就是物物相连的互联网。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" src="img/topic5.png">
+										<div class="mui-media-body">
+											智能家居
+											<p class='mui-ellipsis'>科技与人文的结合, 智慧机器进入家居。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" src="img/topic6.png">
+										<div class="mui-media-body">
+											工业4.0
+											<p class='mui-ellipsis'>按需采购按需生产, 最优化利用资源。定制化生产。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" src="img/topic7.png">
+										<div class="mui-media-body">
+											软件开发
+											<p class='mui-ellipsis'>唯一不变的是不断变化的需求, 快速迭代开发满足需要。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" src="img/topic8.png">
+										<div class="mui-media-body">
+											航天科技
+											<p class='mui-ellipsis'>国家的载人航天工程, 彰显大国实力。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" src="img/topic1.png">
+										<div class="mui-media-body">
+											政策解读
+											<p class='mui-ellipsis'>经济社会转型发展,市委市政府出台了《关于实施“百千万英才计划”的意见》</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" src="img/topic2.png">
+										<div class="mui-media-body">
+											创新
+											<p class='mui-ellipsis'>当下,经济飞速发展的中国已进入创新驱动发展的新常态。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" src="img/topic3.png">
+										<div class="mui-media-body">
+											云计算
+											<p class='mui-ellipsis'>云计算是一种按使用量付费的模式，这种模式提供可用的、便捷的、按需的网络访问</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" src="img/topic4.png">
+										<div class="mui-media-body">
+											物联网
+											<p class='mui-ellipsis'>物联网就是物物相连的互联网。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" src="img/topic5.png">
+										<div class="mui-media-body">
+											智能家居
+											<p class='mui-ellipsis'>科技与人文的结合, 智慧机器进入家居。</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

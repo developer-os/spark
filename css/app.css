@@ -3,7 +3,10 @@
 /* global  */
 .html-fixed, .html-fixed body {height:100%;}
 body {font-family:"microsoft yahei",'Helvetica Neue',Helvetica,sans-serif;}
-a, input, button {outline:none;}
+a, input, button {text-decoration:none;outline:none;}
+.float-left {float:left;}
+.float-right {float:right;}
+.float-clear:after {content:".";display:block;clear:both;height:0;visibility:hidden;}
 input[type=search] {background:#fff;}
 .mui-content-relative {position:relative;}
 .img-block {display:block;width:100%;}
@@ -36,6 +39,28 @@ input, select, textarea {font-size:14px;font-family:"microsoft yahei",'Helvetica
 #selectList .mui-table-view-cell.mui-checkbox input[type=checkbox], 
 .mui-table-view-cell.mui-radio input[type=radio] {top:18px;}
 
+.active-cards .mui-card {margin:0 0 15px 0;border-radius:0;}
+.active-cards .mui-card-header.mui-card-media .mui-media-body {margin-left:0;font-size:15px;}
+.active-cards .mui-card-header.mui-card-media .mui-media-body .tags {margin:5px 0;}
+.active-cards .mui-card-header.mui-card-media .mui-media-body .text-high {font-size:12px;color:#ff9900;}
+.active-cards .mui-card-footer {border-radius:0;font-size:12px;}
+.active-cards .mui-card-footer a {padding:2px 8px;color:#fff;background:#007aff;border-radius:5px;}
+
+.panel-list {}
+.panel-div {margin-top:15px;background:#fff;}
+.panel-div:first-child {margin-top:0;}
+.panel-header {padding:6px 15px;border-left:3px solid #ccc;}
+.panel-header-blue {border-color:#428bca;}
+.panel-header-red {border-color:#d9534f;}
+.panel-header-green {border-color:#4cae4c;}
+.panel-header-yellow {border-color:#eea236;}
+.panel-header span {font-size:16px;}
+.panel-header a {font-size:12px;}
+.panel-content {padding-bottom:10px;border-top:1px solid #eee;}
+.panel-content .mui-row>div {}
+.panel-content .mui-row img {margin:12px auto 5px auto;display:block;width:60%;max-width:48px;}
+.panel-content .mui-row p {margin-bottom:0px;text-align:center;font-size:12px;color:#333;}
+
 /* 招商中心  */
 .nav-bar {padding:14px 0;}
 .nav-bar .mui-row>div {padding:1px 0;text-align:center;}
@@ -65,6 +90,16 @@ input, select, textarea {font-size:14px;font-family:"microsoft yahei",'Helvetica
 	box-shadow:0 1px 3px #000;
 }
 .fixed-link .mui-icon-extra {margin-top:9px;font-size:32px;color:#fff;}
+
+/* 人力资源 */
+.article-div {padding:10px 15px;}
+.article-div h3,
+.article-div p,
+.article-div li {line-height:1.5em;font-size:14px;font-weight:normal;color:#333;}
+.article-div h3 {margin-top:5px;font-size:16px;font-weight:500;}
+.article-div p {text-indent:2em;}
+.article-div ul {padding-left:42px;}
+.article-div img {margin:0 auto;display:block;max-width:90%;}
 
 /* 数据展示  */
 .card-div {
