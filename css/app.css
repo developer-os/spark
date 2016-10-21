@@ -16,6 +16,8 @@ input[type=search] {background:#fff;}
 .mui-input-row label,
 .mui-input-row select,
 input, select, textarea {font-size:14px;font-family:"microsoft yahei",'Helvetica Neue',Helvetica,sans-serif;}
+.no-mar {margin:0!important;}
+.no-pad {padding:0!important;}
 
 /* 首页  */
 #navSlider {padding-top:40px;}
@@ -69,7 +71,12 @@ input, select, textarea {font-size:14px;font-family:"microsoft yahei",'Helvetica
 .nav-bar a.active,
 .nav-bar a:active {color:#007aff;}
 .nav-control {border:none;border-radius:0;}
+.banner-div {background:#fff;}
 .banner-div img {display:block;width:100%;height:145px;}
+.banner-div p {padding:10px;line-height:1.5em;}
+.banner-div p span {font-weight:bold;color:#000;}
+.banner-div a {color:#333;}
+.banner-div a span {float:right;color:#007aff;}
 .card-list {position:fixed;top:228px;bottom:0;width:100%;overflow:auto;}
 .card-list .mui-card {margin:10px 0 0 0;border-radius:0;box-shadow:none;}
 .card-list .mui-card-content-inner {padding-bottom:0;}
@@ -99,7 +106,7 @@ input, select, textarea {font-size:14px;font-family:"microsoft yahei",'Helvetica
 .article-div h3 {margin-top:5px;font-size:16px;font-weight:500;}
 .article-div p {text-indent:2em;}
 .article-div ul {padding-left:42px;}
-.article-div img {margin:0 auto;display:block;max-width:90%;}
+.article-div img {margin:0 auto;display:block;max-width:100%;}
 
 /* 数据展示  */
 .card-div {
