@@ -9,6 +9,7 @@ a, input, button {text-decoration:none;outline:none;}
 .float-clear:after {content:".";display:block;clear:both;height:0;visibility:hidden;}
 input[type=search] {background:#fff;}
 .mui-content-relative {position:relative;}
+.mui-content-fixed {height:100%;}
 .img-block {display:block;width:100%;}
 .mui-card-header .mui-media-body h3 {font-size:18px;font-weight:500;}
 .mui-card-content-inner h3 {margin:10px 0;font-size:16px;font-weight:500;}
@@ -107,6 +108,9 @@ input, select, textarea {font-size:14px;font-family:"microsoft yahei",'Helvetica
 .article-div p {text-indent:2em;}
 .article-div ul {padding-left:42px;}
 .article-div img {margin:0 auto;display:block;max-width:100%;}
+
+/* VR全景  */
+.vr-container {height:100%;background:yellow;}
 
 /* 数据展示  */
 .card-div {

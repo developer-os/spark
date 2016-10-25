@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panorama id="node1">
+  <input width="400" levelingroll="0" leveltilesize="510" levelbias="0.400" leveltileurl="tiles/vr/cf_%c/l_%l/c_%x/tile_%y.jpg" height="400" levelbiashidpi="0.400" overlap="1" levelingpitch="0">
+    <level width="400" preload="1" predecode="1" height="400"/>
+    <preview strip="1" color="0x808080"/>
+  </input>
+  <view fovmode="0" pannorth="0">
+    <start pan="0" fov="100" tilt="0"/>
+    <min pan="0" fov="5" tilt="-90"/>
+    <max pan="360" fov="120" tilt="90"/>
+  </view>
+  <userdata description="" author="" latitude="" title="" source="" copyright="" longitude="" tags="Desktop" comment="" info="" datetime=""/>
+  <hotspots width="180" height="20" wordwrap="1">
+    <label enabled="1" width="180" backgroundcolor="0xffffff" bordercolor="0x000000" borderalpha="1" textcolor="0x000000" borderradius="1" height="20" wordwrap="1" background="1" backgroundalpha="1" border="1" textalpha="1"/>
+    <polystyle backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1" handcursor="1" backgroundalpha="0.2509803921568627" mode="0"/>
+  </hotspots>
+  <media/>
+  <transition enabled="0" type="crossdissolve" blendtime="1" softedge="0" zoomfov="20" blendcolor="0x000000" zoomin="0" zoomspeed="2" zoomout="0" zoomoutpause="1"/>
+  <control hideabout="0" lockedkeyboard="0" simulatemass="1" sensitivity="8" invertcontrol="1" dblclickfullscreen="0" invertwheel="0" lockedkeyboardzoom="0" speedwheel="1" lockedmouse="0" contextfullscreen="0" lockedwheel="0"/>
+</panorama>
